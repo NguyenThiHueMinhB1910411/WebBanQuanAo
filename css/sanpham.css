@@ -1,0 +1,62 @@
+/*
+
+    Author: Huế Minh
+    Ngày tạo:13/12/2021
+    Ngày cập nhật: 18/12/2021
+ 
+ */
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    /* margin: 1vw; */
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-image: url(../images/paper.png);
+    grid-template-areas: "header-cell" "main-cell" "footer-cell";
+    font-size: 1.5vw;
+}
+/* Phần tiêu đề cấp 1 h1 */
+.article__h1 {
+    font-family: monospace;
+    font-size: 3vw;
+    text-align: center;
+    letter-spacing: 2%;
+    color: rgb(43, 37, 60);
+}
+/* Định dạng nội dung chính */
+
+.container__main {
+    grid-area: main-cell;
+    display: grid;
+    padding: 0 5px;
+}
+
+.article__section {
+    display: flex;
+    text-align: center;
+}
+
+.article__section div {
+    margin: 1.8%;
+    border: 1px solid #dbd7d9;
+    width: 33%;
+    border-radius: 5px;
+    border: 1px solid rgb(117, 117, 194);
+}
+/* Nút đặt hàng button và số lượng input  */
+button, input{
+    font-size: 1.2vw;
+}
+button:hover{
+    color: palegreen;
+    background-color: rgb(18, 18, 19);
+    
+}
+
+

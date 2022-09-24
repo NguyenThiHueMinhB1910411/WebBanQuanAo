@@ -1,0 +1,103 @@
+/*
+
+    Author: Huế Minh
+    Ngày tạo:13/12/2021
+    Ngày cập nhật: 18/12/2021
+ 
+ */
+ html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    /* margin: 1vw; */
+}
+ 
+ .container {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-image: url(../images/paper.png);
+    grid-template-areas: "header-cell" "main-cell" "footer-cell";
+    font-size: 1.5vw;
+}
+/* Phần tiêu đề cấp 1 h1 */
+h1 {
+    font-family: monospace;
+    font-size: 5vw;
+    padding: 2vw 0;
+    letter-spacing: -55%;
+    color: rgb(43, 37, 60);
+    text-align: center;
+}
+/* Định dạng nội dung chính */
+.container__main{
+    grid-area: main-cell;
+    display: grid;
+    padding: 0 0 20px;
+} 
+
+
+/* Nút xác nhận đơn hàng */
+#xacnhan{
+    font-size: 1.2vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1% 5%;
+    font-weight: bolder ;
+    color: rgb(41, 32, 72);
+    background-color:rgb(228, 194, 82);
+    border: groove rgb(133, 123, 123);
+    border-radius: 5px;
+    
+}
+
+#xacnhan:hover{
+    background-color:rgb(41, 32, 72) ;
+    color: #fff;
+    cursor: pointer;
+}
+/* Định dạng bảng */
+table{
+    text-align: center;
+    display:flex; 
+    justify-content: center;
+    border-collapse: collapse; 
+    border-spacing: 15 15;
+    /* background-color: aliceblue; */
+   
+}
+.detail{
+    font-size: 2vw;
+    font-family: Roboto;
+    font-weight: bolder;
+    color: #000;
+    background-color: #1E6F5C;
+}
+.detail, td{
+    padding: 0.5vw;
+}
+tr{
+    border:1px  solid #AE431E;
+}
+/* Phần ảnh của sản phần vừa đặt */
+td > img{
+    width: 50%;
+}
+/* Định dạng dòng đầu tiên của bảng */
+td{
+    text-align: center;
+    font-size: 1.5vw;
+    background-color: rgb(207, 237, 211);
+      
+}
+
+@media screen and (max-width: 768px) {
+    td{
+        text-align: center;
+        font-size: 2.5vw;
+        background-color: rgb(207, 237, 211);
+  
+    }
+}
+

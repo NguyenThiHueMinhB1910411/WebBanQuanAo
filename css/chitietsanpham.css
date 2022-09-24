@@ -1,0 +1,244 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-image: url(../images/paper.png);
+    grid-template-areas: "header-cell" "main-cell" "footer-cell";
+}
+
+
+/* Hình 2.5 Tạo bố cục 1 cột, 3 dòng */
+
+.container__header {
+    grid-area: header-cell;
+    /* position: relative; */
+    /* border: solid blue; */
+}
+
+.container__main {
+    grid-area: main-cell;
+    /* border: solid green; */
+}
+
+.container__footer {
+    grid-area: footer-cell;
+    font-size: 1.2vw;
+    /* border: solid red; */
+}
+
+header {
+    position: relative;
+    border: 1px solid #ccc7c8;
+    /* background-color: paleturquoise; */
+    background-image: url(../images/paper.png);
+    border-radius: 5px;
+}
+
+
+/* Thanh liên kết */
+
+.nav__link--item {
+    width: 100%;
+    margin: 0 1%;
+    padding: 0.5% 1%;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    background-color: rgb(133, 123, 123);
+    border-radius: 5px;
+}
+
+.nav__link--item:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+i.nav__mobile-bars {
+    display: none;
+}
+
+
+/* Thanh tìm kiếm */
+
+.nav__search {
+    position: absolute;
+    right: 0.5%;
+    bottom: -10%;
+}
+
+
+/* Nội dung ô tìm kiếm */
+
+.nav__search--text {
+    padding: 1vw;
+    font-size: 1vw;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.nav__search--icon-search,
+.nav__search--icon-cart {
+    padding: 1vw;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 1.2vw;
+}
+
+.nav__search--icon-search:hover,
+.nav__search--icon-cart:hover {
+    color: rgb(92, 92, 194);
+}
+
+#search-submit {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Định dạng nội dung chính */
+
+.container__main {
+    grid-area: main-cell;
+    display: grid;
+    padding: 0 5px;
+}
+
+
+
+/* Tiêu đề cấp 1 */
+
+.article__h1 {
+    font-family: monospace;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 2%;
+    color: rgb(43, 37, 60);
+}
+
+
+/* Phan footer */
+
+.container__footer {
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 5px;
+    background-image: url(../images/paper.png);
+    /* background-color: paleturquoise; */
+}
+
+.container__footer--icon {
+    color: #fff;
+    background-color: rgb(43, 37, 60);
+    padding: 0.3% 1%;
+    border-radius: 5px;
+}
+
+.container__footer--icon:hover {
+    color: rgb(92, 137, 255);
+}
+
+
+
+
+#logo {
+    margin-bottom: 1%;
+}
+
+@media screen and (max-width: 768px) {
+    a.nav__link--item,
+    #logo {
+        display: none;
+    }
+    i.nav__mobile-bars {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        margin: 0;
+        font-size: 4vw;
+        background: black;
+        color: white;
+        padding: 2%;
+    }
+    a.nav__link--responsive,
+    .nav__link--responsive {
+        display: block;
+        border-radius: 0;
+        margin: 0;
+        font-size: 4vw;
+        padding: 2% 0;
+    }
+    .nav__search {
+        position: static;
+    }
+    i.nav__search--icon-cart {
+        display: block;
+        position: fixed;
+        font-size: 5vw;
+        padding: 2vw;
+        bottom: 0;
+        right: 0.5vw;
+    }
+    .nav__search--icon-search,
+    .nav__search--text {
+        font-size: 3.5vw;
+        padding: 2%;
+    }
+}
+
+/* Vùng chứa toàn bộ chi tiết sản phẩm */
+.product{
+    text-align: center;
+    padding: 2vw;
+    margin:8vw 16vw;
+    background-color: #F9F9F9;
+    border: 1px dashed dodgerblue;
+    border-radius: 5px;
+}
+/* Phần tiêu đề */
+.product__title{
+    font-family:  monospace;
+    font-size: 3vw;
+    text-align: center;
+    color: #0F044C; 
+    background-color: rgb(183, 183, 235);
+    margin: 3vw 12vw;
+    border: 1px solid #141E61;
+    border-radius: 10px;
+    
+}
+/* phần nội dung của sản phẩm */
+.product__content{
+    margin: 2vw;
+    text-align: center;
+}
+/* Phần giá sản phẩm */
+.product__price{
+    color: #0F044C;
+    font-size: 1.7vw;
+}
+/*Phần ảnh của sản phẩm*/
+.product__img{
+    border: 1px solid #000;
+}
+/* Tiêu đề cấp 2 tên sản phẩm */
+.product__name{
+    font-size: 2.5vw;
+    color: #F25287;
+}

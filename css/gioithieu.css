@@ -1,0 +1,150 @@
+/*
+
+    Author: Huế Minh
+    Ngày tạo:13/12/2021
+    Ngày cập nhật: 18/12/2021
+ 
+ */
+     html {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 100%;
+    }
+
+     .container {
+        display: grid;
+        width: 100%;
+        margin: 0;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-image: url(../images/paper.png);
+        grid-template-areas: "header-cell" "main-cell" "footer-cell";
+        font-size: 1.5vw;
+    }
+    /* Phần tiêu đề cấp 1 h1 */
+    .article__h1 {
+        font-family: monospace;
+        font-size: 3vw;
+        text-align: center;
+        padding-top: 3%;
+        letter-spacing: 2%;
+        color: rgb(43, 37, 60);
+    }
+    /* Định dạng nội dung chính  dạng 1 cột*/
+    .container__main{
+        grid-area: main-cell;
+        display: grid;
+        padding: 0 5px;
+    } 
+    /* Định dạng nội dung chính dạng*/
+     /* .container__main{
+        display: grid;
+       
+        grid-template-areas: "article-cell aside-cell";
+    }
+    .container__main--article{
+        grid-area: article-cell;
+    }
+    .container__main--aside{
+        grid-area: aside-cell;
+    }  */
+    /* Định dạng nội dung chính dạng 1 cột 2 hàng */
+    .one-col{
+        display: grid;
+        grid-template-areas: "article-cell" "nont-cell" ;
+    }
+    .container__main--article{
+        grid-area: article-cell;
+    }
+    .main__notification{
+        grid-area: nont-cell;
+    }  
+
+    /* Phần  article */
+    .article__about{
+        margin: 2% 4% 1% 4%;
+        background-color: rgb(250, 245, 229);
+        border:  dotted rgb(111, 105, 105) ;
+        
+    }
+    /* Phần ảnh trong article  */
+    .article__about--img{
+        text-align: center;
+        margin: 2%;
+    }
+/* Phần ảnh thông tin giới thiệu của shop trong article  */
+    .article__about--text{
+        text-align: center;
+        margin: 2%;
+        
+    }
+
+    /* Nút đăng ký ngay */
+    .about__click{
+        font-size: 1.2vw;
+        text-decoration: none;
+       
+        font-weight: bolder ;
+        color: rgb(41, 32, 72);
+        background-color:rgb(228, 194, 82);
+        border: groove rgb(133, 123, 123);
+        border-radius: 5px;
+        padding: 1% 5%;
+        margin: 3%;
+       
+    }
+    /* Hiệu ứng nút đăng ký ngay khi đưa chuột lại*/
+    .about__click:hover{
+        color: #064635;
+        background-color:#B4FE98;
+
+    }
+    /* Phần aside */
+    /* .aside__about{
+        margin: 5.8%;
+        background-color: rgb(250, 245, 229);
+        border:  dotted rgb(111, 105, 105) ;
+    }
+    .aside__about--text{
+        
+        margin: 5%;
+        color: rgb(111, 105, 105);
+    }
+    .discount_time{
+        color: #DE834D;
+        font-size: 1.5vw;
+
+    }
+
+ .discount_time > b{
+     color: #1E6F5C;
+ } */
+ 
+/* Phần thông báo thời gian giảm giá */
+ .main__notification{
+    margin: 1% 4%;
+    background-color: rgb(250, 245, 229);
+    border:  dotted rgb(111, 105, 105) ;
+    
+}
+.notification__about--text{
+    text-align: center;
+    margin: 2%;
+    
+}
+.notification__h1 {
+    font-family: monospace;
+    font-size: 3vw;
+    text-align: center;
+    padding-top: 3%;
+    letter-spacing: 2%;
+    color: rgb(43, 37, 60);
+}
+.discount_time > b{
+    color: #1E6F5C;
+} 
+    
+    
+  
+   
+  
+    

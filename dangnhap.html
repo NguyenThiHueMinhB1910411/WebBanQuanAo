@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/Seunie-logo.ico">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/dangnhap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <title>Đăng Nhập</title>
+</head>
+
+<body class="container">
+    <!-- Begin: header -->
+    <header class="container__header">
+        <a href="trangchu.html"> <img id="logo" src="images/logo_clear.png" width="10%" alt="logo Trang chủ"> </a>
+        <nav class="nav__link">
+            <i class="fa fa-bars nav__mobile-bars" onclick="responsive()"></i>
+            <a href="trangchu.html" class="nav__link--item">Trang chủ</a>
+            <a href="gioithieu.html" class="nav__link--item">Giới thiệu</a>
+            <a href="sanpham.html" class="nav__link--item">Sản phẩm</a>
+            <a href="dangnhap.html" class="nav__link--item">Đăng nhập</a>
+            <a href="dangky.html" class="nav__link--item">Đăng ký</a>
+            <form id="search-form" class="nav__search" action="search.html">
+                <input id="search-text" class="nav__search--text" type="text" placeholder="Nhập nội dung cần tìm..." name="search-text">
+                <button type="submit" id="search-submit"><i class="fas fa-search nav__search--icon-search"></i></button>
+                <i class="fas fa-shopping-cart  nav__search--icon-cart" onclick="donhang()"></i>
+            </form>
+        </nav>
+    </header>
+    <!-- End: header -->
+
+    <!-- Begin: main -->
+    <main class="container__main">
+        <h1 class="main__heading main__heading--res">Đăng Nhập</h1>
+        <div class="main__wrapper main__wrapper--res">
+            <form id="form__login" action="/notExistURL">
+                <div class="form__row">
+                    <label class="form__row--text">Tên đăng nhập
+                            <input type="text1" name="username" id="username"
+                             placeholder="Nhập tên username..." required>
+                        </label>
+                    <small class="message"></small>
+                </div>
+                <div class="form__row">
+                    <label class="form__row--text">Mật khẩu
+                            <input type="password" name="password" id="password"
+                             placeholder="Nhập mật khẩu..." required>
+                            <div class="eye">
+                                <i class="eye far fa-eye"></i>
+                                <b>Hiện mật khẩu</b>
+                            </div>
+                        </label>
+                    <small class="message"></small>
+                </div>
+                <div class="form__row1">
+                    <span class="form__row--text1">Bạn quên <a class="form__unpas" href="#">Mật khẩu?</a></span>
+                </div>
+                <div class="form__row form__row--submit">
+                    <input type="submit" value="Đăng Nhập">
+                </div>
+                <div class="form__act form__act--res">
+                    <span>Bạn chưa có tài khoản? Đăng ký 
+                        <a href="dangky.html">Tại đây</a>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- End: main -->
+
+    <!-- Begin: footer -->
+    <footer class="container__footer">
+        <div class="footer__layout">
+            <div class="footer__ad">
+                <a href="./trangchu.html">
+                    <img src="./images/logo_clear.png">
+                </a>
+            </div>
+            <div class="footer__addres">
+                <h3>Liên Hệ</h3>
+                <ul>
+                    <li><b>ĐỊA CHỈ</b>: Đại Học Cần Thơ (CTU)</li>
+                    <li><b>SỐ PHONE</b>: 0968397979</li>
+                    <li><b>EMAIL</b>:
+                        <li class="footer__address--font">
+                            <p>thienb1906576@student.ctu.edu.vn</p>
+                        </li>
+                        <li class="footer__address--font">
+                            <p>thanhb1909895@student.ctu.edu.vn</p>
+                        </li>
+                        <li class="footer__address--font">
+                            <p>minhb1910411@student.ctu.edu.vn</p>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__email">
+                <h3>Đăng ký ngay nhận quà hấp dẫn</h3>
+                <input class="footer__email--follow" type="text" name="email" id="email" placeholder="Vui lòng nhập địa chỉ email!!!!">
+                <input class="footer__email--click" type="button" value="Đăng Ký">
+            </div>
+        </div>
+        <div class="footer__coppy">
+            <h3> Follow us on social media </h3>
+            <a href="#"><i class="fab fa-facebook-f container__footer--icon"></i></a>
+            <a href="#"><i class="fab fa-twitter container__footer--icon"></i></a>
+            <a href="#"><i class="fab fa-instagram container__footer--icon"></i></a>
+            <p>&copy; 2021 Nhóm 8 học phần CT188_05 HK1 năm 2021-2022.&nbsp;</p>
+            <a href="#logo" id="footer-img"> <img src="./images/top.png"></a>
+        </div>
+        <div class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="" data-width="200" data-height="300">
+        </div>
+    </footer>
+    <!-- End: footer -->
+
+    <!-- JavaScript -->
+    <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/dangnhap.js"></script>
+    <script src="js/responsive-nav-bars.js" type="text/javascript"></script>
+    <script src="js/shopping-cart.js"></script>
+    <script>
+        let searchForm = document.getElementById("search-form");
+        searchForm.addEventListener("submit", (evt) => {
+            if (evt.target.firstElementChild.value == '') {
+                evt.preventDefault();
+            }
+        })
+    </script>
+</body>
+
+</html>

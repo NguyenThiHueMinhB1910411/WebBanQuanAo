@@ -1,0 +1,350 @@
+/*
+
+    Author: Huế Minh
+    Ngày tạo:13/12/2021
+    Ngày cập nhật: 18/12/2021
+ 
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    grid-template-areas: "header-cell" "main-cell" "footer-cell";
+}
+
+
+/* Hình 2.5 Tạo bố cục 1 cột, 3 dòng */
+
+.container__header {
+    grid-area: header-cell;
+    position: relative;
+    border: 1px solid #ccc7c8;
+    background-image: url(../images/header_helow.jpg);
+    border-radius: 5px;
+}
+
+.container__main {
+    grid-area: main-cell;
+}
+
+.container__footer {
+    grid-area: footer-cell;
+    font-size: 100%;
+}
+
+
+/* Thanh liên kết */
+
+.nav__link {
+    padding: 2vh 0;
+}
+
+.nav__link--item {
+    width: 100%;
+    margin: 0 1%;
+    padding: 0.5% 1%;
+    font-size: 1.5vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border: 1px solid #000;
+    background-color: rgb(133, 123, 123);
+    border-radius: 5px;
+    transition: background 250ms, color 250ms;
+}
+
+.nav__link--item:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+i.nav__mobile-bars {
+    display: none;
+}
+
+
+/* Thanh tìm kiếm */
+
+.nav__search {
+    position: absolute;
+    right: 0.5%;
+    bottom: -10%;
+    padding: 2.8vh 0;
+}
+
+
+/* Nội dung ô tìm kiếm */
+
+.nav__search--text {
+    padding: 1vw;
+    font-size: 1.1vw;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.nav__search--icon-search,
+.nav__search--icon-cart {
+    padding: 1vw;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 1.2vw;
+}
+
+.nav__search--icon-search:hover,
+.nav__search--icon-cart:hover {
+    color: rgb(92, 92, 194);
+}
+
+i.nav__mobile-bars,
+.nav__search--icon-cart,
+.nav__search--icon-search {
+    cursor: pointer;
+}
+
+#search-submit {
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Định dạng nội dung chính */
+
+.container__main {
+    grid-area: main-cell;
+    padding: 10px 5px;
+    background-image: url(../images/paper.png);
+}
+
+
+/* Phan footer  3 cột*/
+
+.footer__layout {
+    display: grid;
+    grid-area: footer-cell;
+    grid-template-areas: 'ad' 'address' 'email';
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer__ad {
+    grid-template: ad;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.footer__ad img {
+    width: 20vw;
+}
+
+.footer__addres {
+    grid-template: address;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.footer__addres li {
+    list-style: none;
+}
+
+.footer__addres ul li {
+    font-size: 1em;
+}
+
+li.footer__address--font {
+    margin-left: 40px;
+    font-style: italic;
+}
+
+.footer__email {
+    grid-template: email;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.footer__email .footer__email--follow {
+    width: 100%;
+    padding: 1%;
+    border: 1px solid green;
+    font-size: 1.2vw;
+}
+
+.footer__email .footer__email--follow:focus {
+    outline: none;
+}
+
+.footer__email .footer__email--click {
+    height: 5vh;
+    padding: 0 4px 0 4px;
+    margin: 0;
+    margin-left: -4;
+    color: rgb(52, 31, 145);
+    background-color: rgb(17, 202, 73);
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+
+.footer__email .footer__email--click:hover {
+    background-color: rgb(78, 75, 75);
+    color: #fff;
+}
+
+.container__footer {
+    font-size: 1.2vw;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 5px;
+    background-image: url(../images/paper.png);
+}
+
+.container__footer--icon {
+    color: #fff;
+    background-color: rgb(43, 37, 60);
+    padding: 0.3% 1%;
+    border-radius: 5px;
+}
+
+.container__footer--icon:hover {
+    color: rgb(92, 137, 255);
+}
+
+.footer__layout h3 {
+    text-transform: uppercase;
+    font-size: 1.6em;
+}
+
+.footer__coppy {
+    padding-top: 10px;
+}
+
+.footer__coppy p {
+    text-transform: uppercase;
+    margin: 4px;
+}
+
+
+/* ------ */
+
+.check-icon {
+    color: green;
+    text-align: left;
+}
+
+.message {
+    color: red;
+}
+
+.error {
+    border: 3px solid red;
+}
+
+#logo {
+    margin-bottom: 1%;
+}
+
+
+/* -------------- */
+
+#footer-img {
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    text-align: left;
+}
+
+#footer-img>img {
+    width: 6vw;
+}
+
+
+/* ---------------------- */
+
+
+/* ----------Responsive------------- */
+
+@media screen and (max-width: 768px) {
+    a.nav__link--item,
+    #logo {
+        display: none;
+    }
+    i.nav__mobile-bars {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 1.7vh;
+        right: 0.5vw;
+        margin: 0;
+        font-size: 4.2vw;
+        background: black;
+        color: white;
+        padding: 2%;
+    }
+    a.nav__link--responsive,
+    .nav__link--responsive {
+        display: block;
+        border-radius: 0;
+        margin: 0;
+        font-size: 4vw;
+        padding: 2% 0;
+    }
+    .nav__search {
+        position: static;
+        padding: 0;
+    }
+    i.nav__search--icon-cart {
+        display: block;
+        position: absolute;
+        font-size: 4vw;
+        padding: 1.8vw;
+        top: 1.7vh;
+        right: 8.5vw;
+    }
+    .nav__search--icon-search,
+    .nav__search--text {
+        font-size: 3.5vw;
+        padding: 2vw;
+    }
+    .container__footer {
+        padding: 2px;
+    }
+    /* footer chuyển về 1 cột */
+    .footer__layout {
+        display: grid;
+        grid-template-areas: 'ad' 'address' 'email';
+        grid-template-columns: 1fr;
+        font-size: 100%;
+    }
+    .footer__ad {
+        margin-top: 0px;
+    }
+    .footer__layout h3 {
+        font-size: 5vw;
+    }
+    .footer__addres ul li {
+        font-size: 2vw;
+    }
+    .footer__coppy {
+        font-size: 4vw;
+    }
+    .footer__email .footer__email--follow,
+    .footer__email .footer__email--click {
+        font-size: 2.5vw;
+    }
+}

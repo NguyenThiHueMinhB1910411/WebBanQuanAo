@@ -1,0 +1,70 @@
+/*
+/*
+
+    Author: Huế Minh
+    Ngày tạo:13/12/2021
+    Ngày cập nhật: 18/12/2021
+ 
+ */
+
+.article-containter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.article-containter__section {
+    width: 90%;
+    background: rgb(250, 245, 229);
+    position: relative;
+    padding: 7% 2%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    justify-self: center;
+}
+
+.article-containter__image {
+    width: 100%;
+}
+
+.article-containter__more-btn {
+    position: absolute;
+    left: 2%;
+    bottom: 1%;
+    font-size: 1.3vw;
+    padding: 1%;
+    border-radius: 5px;
+    background: rgb(97, 97, 97);
+    color: white;
+    transition: background 250ms, color 250ms;
+}
+
+.article-containter__more-btn:hover {
+    background: white;
+    color: black;
+}
+
+.more {
+    font-size: 0.8em;
+}
+
+.reset {
+    padding: 1%;
+    border-radius: 5px;
+    background: rgb(224, 25, 25);
+    color: white;
+    transition: background 250ms;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .article-containter {
+        grid-template-columns: 1fr;
+    }
+    .container__main {
+        font-size: 2.5vw;
+        justify-items: center;
+    }
+    .article-containter__more-btn {
+        font-size: 3vw;
+    }
+}
